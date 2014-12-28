@@ -1,0 +1,24 @@
+<html ng-app="todoApp">
+<head>
+	<title>go angular</title>
+</head>
+<body>
+	<div id="wrap">
+		<div id="conetent">
+			<form id="todoForm" action="">
+				<label>将下面输入的文字放入todo list</label>
+				<input id="todoInput" type="text" ng-module="txt"></input>
+			</form>
+			<p id="todoCount"></p>
+			<ol ng-repeat="todo in todolist">
+				<li>
+					{{todo}}
+					<a href="#"></a>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<script type="text/javascript" src="/static/lib/angular.js"></script>
+	<script type="text/javascript" src="/static/js/index.js"></script>
+</body>
+</html>
